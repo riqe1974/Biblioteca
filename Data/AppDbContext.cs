@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Biblioteca.Data
 {
-    public class BibliotecaContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public BibliotecaContext(DbContextOptions<BibliotecaContext> options) : base(options) { }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Livro> Livros => Set<Livro>();
         public DbSet<Autor> Autores => Set<Autor>();
